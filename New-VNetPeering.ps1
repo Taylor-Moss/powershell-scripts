@@ -62,4 +62,5 @@ Add-AzVirtualNetworkPeering `
 
 #test connection: (on-prem > vm1 > vm2)
 Get-AzVm | Get-AzPublicIpAddress | Select-Object Name,IpAddress
-ssh azureadmin@20.115.110.146
+
+ssh azureadmin@xx.xxx.xxx.xxx
