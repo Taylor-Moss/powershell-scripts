@@ -1,2 +1,5 @@
-# powershell
-A collection of PowerShell Functions, Modules, and Scripts.
+# PowerShell
+
+A collection of PowerShell functions, modules, and scripts.
+
+Mostly for user administration for on-prem and cloud with Azure/Exchange/M365.
