@@ -2,23 +2,35 @@
 
 ## Overview
 
-This repository contains a collection of PowerShell scripts used to automate common IT and cloud administration tasks across identity management, infrastructure, and system operations.
+This repository contains a collection of PowerShell scripts designed to automate common IT and cloud administration tasks across identity management, user lifecycle operations, and infrastructure.
 
-The scripts focus on reducing manual effort, improving consistency, and enabling repeatable workflows in both on-premises and cloud environments.
+The focus is on reducing manual effort, improving consistency, and enabling repeatable workflows in both on-premises and cloud environments.
 
 ---
 
-## Use Cases Covered
+## Core Focus Areas
 
-* Identity and user lifecycle automation
-* Active Directory / computer management
-* Email and onboarding workflows
-* Azure infrastructure configuration
-* Storage and networking automation
+* User lifecycle automation (onboarding & offboarding)
+* Identity and access management
+* System and device administration
+* Azure infrastructure automation
 
 ---
 
 ## Script Breakdown
+
+### User Lifecycle Automation
+
+* **New-Onboarding.ps1**
+  Automates new user onboarding workflows, such as account setup, group assignment, and initial configuration.
+
+* **New-Offboarding.ps1**
+  Handles user offboarding processes, including access removal, cleanup, and deprovisioning tasks.
+
+* **Send-NewHireEmail.ps1**
+  Sends onboarding-related communications for new users.
+
+---
 
 ### Identity & User Management
 
@@ -26,10 +38,7 @@ The scripts focus on reducing manual effort, improving consistency, and enabling
   Automates adding users to Microsoft Online (MSOL) groups.
 
 * **Get-Employees.ps1**
-  Retrieves employee/user data for reporting or automation workflows.
-
-* **Send-NewHireEmail.ps1**
-  Sends onboarding emails as part of new hire provisioning.
+  Retrieves user/employee data for reporting or automation workflows.
 
 ---
 
@@ -71,18 +80,18 @@ The scripts focus on reducing manual effort, improving consistency, and enabling
 
 ## Purpose
 
-These scripts represent practical automation solutions for real-world administrative tasks, demonstrating:
+These scripts represent practical automation solutions for real-world administrative workflows, demonstrating:
 
-* Scripting for operational efficiency
-* Cloud and hybrid environment management
-* Identity and access workflow automation
-* Reusable tooling via PowerShell modules
+* End-to-end user lifecycle automation
+* Identity and access management in hybrid environments
+* Infrastructure automation using scripting
+* Operational efficiency through repeatable tooling
 
 ---
 
 ## Notes
 
-* Scripts are designed for specific environments and may require modification before use
+* Scripts are environment-specific and may require modification before use
 * Credentials and sensitive data are not included
 * Intended for demonstration and portfolio purposes
 
@@ -90,13 +99,13 @@ These scripts represent practical automation solutions for real-world administra
 
 ## Future Improvements
 
-* Parameterization and input validation
-* Logging and error handling standardization
-* Conversion into reusable modules or CLI tools
-* Integration into CI/CD or automation pipelines
+* Standardize logging and error handling
+* Add parameter validation and input schemas
+* Convert commonly used scripts into reusable modules
+* Integrate into CI/CD or automation pipelines
 
 ---
 
 ## Author Notes
 
-This repository is part of a broader cloud engineering portfolio focused on automation, infrastructure, and operational tooling.
+This repository is part of a cloud engineering portfolio focused on automation, infrastructure, and operational tooling.
